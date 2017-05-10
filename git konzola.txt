@@ -1,0 +1,113 @@
+
+javawebdevelopment@E302-17 MINGW64 ~
+$ git config --global user.name "Milos Kostresevic"
+
+javawebdevelopment@E302-17 MINGW64 ~
+$ git config --global user.email losmi_93@hotmail.com
+
+javawebdevelopment@E302-17 MINGW64 ~
+$ cd "C:\Users\javawebdevelopment\Desktop\Kostreevi\git primer"
+bash: cd: C:\Users\javawebdevelopment\Desktop\Kostreevi\git primer: No such file                                                    or directory
+
+javawebdevelopment@E302-17 MINGW64 ~
+$ cd "C:\Users\javawebdevelopment\Desktop\git primer"
+
+javawebdevelopment@E302-17 MINGW64 ~/Desktop/git primer
+$ git status
+fatal: Not a git repository (or any of the parent directories): .git
+
+javawebdevelopment@E302-17 MINGW64 ~/Desktop/git primer
+$ git status
+fatal: Not a git repository (or any of the parent directories): .git
+
+javawebdevelopment@E302-17 MINGW64 ~/Desktop/git primer
+$ git status
+fatal: Not a git repository (or any of the parent directories): .git
+
+javawebdevelopment@E302-17 MINGW64 ~/Desktop/git primer
+$ git clone https:\\https://github.com/shamanNS/GitPrimer
+Cloning into 'GitPrimer'...
+fatal: I don't handle protocol 'https:\https'
+
+javawebdevelopment@E302-17 MINGW64 ~/Desktop/git primer
+$ ^C
+
+javawebdevelopment@E302-17 MINGW64 ~/Desktop/git primer
+$ git clone https://github.com/shamanNS/GitPrimer
+Cloning into 'GitPrimer'...
+fatal: unable to access 'https://github.com/shamanNS/GitPrimer/': error setting certifica                                          te verify locations:
+  CAfile: C:/Users/student/AppData/Local/Programs/Git/mingw64/ssl/certs/ca-bundle.crt
+  CApath: none
+
+javawebdevelopment@E302-17 MINGW64 ~/Desktop/git primer
+$ git config --system http.sslverify false
+
+javawebdevelopment@E302-17 MINGW64 ~/Desktop/git primer
+$ git clone https://github.com/shamanNS/GitPrimer
+Cloning into 'GitPrimer'...
+remote: Counting objects: 6, done.
+remote: Compressing objects: 100% (2/2), done.
+remote: Total 6 (delta 0), reused 3 (delta 0), pack-reused 0
+Unpacking objects: 100% (6/6), done.
+
+javawebdevelopment@E302-17 MINGW64 ~/Desktop/git primer
+$ git status
+fatal: Not a git repository (or any of the parent directories): .git
+
+javawebdevelopment@E302-17 MINGW64 ~/Desktop/git primer
+$ ls
+GitPrimer/
+
+javawebdevelopment@E302-17 MINGW64 ~/Desktop/git primer
+$ cd GitPrimer
+
+javawebdevelopment@E302-17 MINGW64 ~/Desktop/git primer/GitPrimer (master)
+$ git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        modified:   Hello.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+javawebdevelopment@E302-17 MINGW64 ~/Desktop/git primer/GitPrimer (master)
+$ git add *
+
+javawebdevelopment@E302-17 MINGW64 ~/Desktop/git primer/GitPrimer (master)
+$ git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        modified:   Hello.txt
+
+
+javawebdevelopment@E302-17 MINGW64 ~/Desktop/git primer/GitPrimer (master)
+$ git commit -m "dodao sam zdravo"
+[master 89d8675] dodao sam zdravo
+ 1 file changed, 1 insertion(+)
+
+javawebdevelopment@E302-17 MINGW64 ~/Desktop/git primer/GitPrimer (master)
+$ git push
+Username for 'https://github.com': Kostresevic
+remote: Permission to shamanNS/GitPrimer.git denied to Kostresevic.
+fatal: unable to access 'https://github.com/shamanNS/GitPrimer/': The requested URL returned error:                                403
+
+javawebdevelopment@E302-17 MINGW64 ~/Desktop/git primer/GitPrimer (master)
+$ git push
+Username for 'https://github.com': Kostresevic
+Counting objects: 3, done.
+Writing objects: 100% (3/3), 293 bytes | 0 bytes/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+To https://github.com/shamanNS/GitPrimer
+   8417266..89d8675  master -> master
+
+javawebdevelopment@E302-17 MINGW64 ~/Desktop/git primer/GitPrimer (master)
+$ ^C
+
+javawebdevelopment@E302-17 MINGW64 ~/Desktop/git primer/GitPrimer (master)
+$
